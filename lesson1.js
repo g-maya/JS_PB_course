@@ -1,14 +1,7 @@
-
 var a = 2;
 var b= 1; 
 
-
-var result;
-if (a + b < 4) {
-result = true;
-} else {
-result = false;
-}
+var result = (a + b < 4) ?  true : false;
 
 
-console.log(3);
+console.log(result);
