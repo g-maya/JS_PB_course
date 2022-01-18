@@ -1,6 +1,4 @@
 
-
-
 var a = 2;
 
 switch (a) {
