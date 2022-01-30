@@ -1,27 +1,36 @@
 
 
-function myForEach(arr, callback) {
 
+const arr = [-1,4,1,2,3];
+
+
+function myfilter (arr, callback) {
     if ( Array.isArray(arr) == false ) {
         throw new Error("Error: parameter type should be an array");
     }
-    else if ( Array.isArray(arr) == true )  {
+    else if (Array.isArray(arr) == true) {
         for (let i = 0; i < arr.length; i++) { 
-            callback(arr[i]);
+            if (arr[i] > 0) {
+                callback(arr[i])
+            }
         }
     }
 }
 
+
 function callback(element) {
+    var newArr = [];
     if ( typeof(callback) != 'function' ) {
         throw new Error("Error: parameter type should be an function");
     }
     else if ( typeof(callback) == 'function') {
-    console.log(element); 
+    newArr.push(element); 
     }
+    console.log(newArr) 
 }
 
 
+myfilter(arr, callback); 
 
-const arr = [1,2,3,8];
-myForEach(arr, callback); 
+
+
