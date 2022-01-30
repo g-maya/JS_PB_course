@@ -16,4 +16,4 @@ var arrLength = arr.map(function(arr) {
     return arr.length;
   });
   
-  console.log(arrLength); // 7,4,7,8
+  console.log(arrLength); // 4,5,2,3
